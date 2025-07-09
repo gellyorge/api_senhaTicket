@@ -1,0 +1,21 @@
+meta {
+  name: senhaTicket_create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/api/senhaTicket/create
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 1|doTPFczDpaQCXE1THRGM3VhiszP8kzcBcYNGaqEI820af521
+}
+
+body:json {
+  {
+    "tipo":"n"
+  }
+}

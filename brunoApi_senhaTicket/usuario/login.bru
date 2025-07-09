@@ -1,0 +1,22 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8000/api/login
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 2|dWEr7ba7KVUhZ1hj0uvQIhA32mCKQd3nUuHDaTGLd1514b72
+}
+
+body:json {
+  {
+    "email":"gellyorge@gmail.com",
+    "password":"gellyorge"
+  }
+}
